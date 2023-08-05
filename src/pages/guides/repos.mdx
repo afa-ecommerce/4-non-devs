@@ -1,0 +1,61 @@
+import { ExternalLink } from '@/components/external-link'
+import { Wrapper } from '@/components/wrapper'
+
+import Image from 'next/image'
+
+# Clonando repositórios do Github
+
+Vamos clonar o nosso primeiro repositório para exemplificar o workflow
+
+<Wrapper>
+  <span className="flex gap-1">
+    Para isso, vamos utilizar
+    <ExternalLink href="https://code.visualstudio.com/">
+      esse repositório aqui
+    </ExternalLink>
+  </span>
+</Wrapper>
+
+---
+
+## Clonando
+
+Já no repositório, você vai encontrar um botão verde com a label `Code`
+
+<Image
+  className="rounded-lg my-4 drop-shadow-lg ring ring-zinc-600 mb-12"
+  src="https://i.imgur.com/GCseAbc.png"
+  alt="Botao verde"
+  width={1000}
+  height={200}
+/>
+
+Clicando nele um popover vai aparecer, clique no botão de copiar
+
+<Image
+  className="rounded-lg my-4 drop-shadow-lg ring ring-zinc-600 mb-12"
+  src="https://i.imgur.com/hp0gYRk.png"
+  alt="Botao verde"
+  width={600}
+  height={600}
+/>
+
+Já com esse link copiado, abra o seu terminal em uma pasta que você queira salvar o repositório se já não estiver aberto. Nele você consegue clonar um repositório usando o seguinte comando:
+
+```bash copy
+git clone "link do repositório copiado"
+```
+
+Troque o conteudo e **também as aspas** pelo link que você copiou do popover.
+
+Com isso, o repositório será baixado em sua maquina, e você precisa entrar na pasta do repositório pelo seu terminal, para fazer isso use o comando `cd{:bash}` para mover para a pasta ou algo similar para o windows.
+
+```bash
+cd ./nome-da-pasta
+```
+
+O nome da pasta geralmente vai ser o nome do repositório.
+
+## Próximo passo
+
+Agora vamos baixar as dependencias e rodar o projeto, siga para frente usando o botão para a próxima aba

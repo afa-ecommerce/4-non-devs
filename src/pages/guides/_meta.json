@@ -3,5 +3,6 @@
   "nodejs": "Instalando Node.js",
   "npm": "Instalando NPM",
   "git": "Instalando e configurando Git",
-  "repos": "Clonando repositórios do Github"
+  "repos": "Clonando repositórios do Github",
+  "project": "Instalando dependencias e rodando projeto"
 }

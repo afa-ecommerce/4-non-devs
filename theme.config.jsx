@@ -4,11 +4,10 @@ import { ScrollText } from 'lucide-react'
 export default {
   logo: (
     <span className="flex gap-2">
-      <ScrollText />
-      <strong className="font-bold">4Non-Devs</strong>
+      <ScrollText /> <strong className="font-bold">&nbsp;4Non-Devs</strong>
     </span>
   ),
   project: {
-    link: 'https://github.com/shuding/nextra',
+    link: 'https://github.com/afa-ecommerce/4-non-devs',
   },
 }

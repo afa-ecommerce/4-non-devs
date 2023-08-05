@@ -1,0 +1,57 @@
+import Image from 'next/image'
+
+# Instalando dependencias e rodando o projeto
+
+## Instalando dependencias
+
+Para instalar as deps _(dependencias)_ do projeto você precisa estar com o seu terminal na pasta do projeto e executar o seguinte comando:
+
+```bash copy
+npm install
+```
+
+As deps vão ser instaladas e quando forem concluídas você já consegue executar o projeto.
+
+## Executando o projeto
+
+Para isso é necessário fazer o setup de algumas coisas.
+
+Se o projeto tiver **variáveis de ambiente** é necessário **criar um arquivo `.env`** e colocar as variáveis usadas no projeto, caso tenha dúvida de quais são usadas pergunte ao desenvolvedor responsável.
+
+Para rodar o projeto, há algumas formas de verificar isso, pois cada `Framework` pode acabar usando um comando diferente.
+
+### Como verificar
+
+Dentro da pasta do projeto existe um arquivo chamado `package.json`, nele há um `json` que você pode interpretar como texto se quiser.
+
+Nesse "`json`" você consegue encontrar uma chave chamada "`scripts`", por exemplo:
+
+<Image
+  className="rounded-lg mt-6 drop-shadow-lg ring ring-zinc-600 mb-12 mx-auto"
+  src="https://i.imgur.com/AtQj6X3.png"
+  alt="Tag Scripts no arquivo json"
+  width={400}
+  height={400}
+/>
+
+Na maioria dos casos o comando que estamos buscando é ou o `dev` ou `start`, se eles existirem então podemos ir para o próximo passo.
+
+### Rodando o projeto
+
+Para rodar o projeto precisamos voltar para o terminal **com a pasta do projeto selecionada** e executar o seguinte comando:
+
+Observação, o comando vai variar dependendo do comando que existir na chave de scripts do package.json
+
+- Se o comando for `dev`:
+
+```bash copy
+npm run dev
+```
+
+- Se o comando for `start`:
+
+```bash copy
+npm run start
+```
+
+- Se não for nem um dos casos, pode ser necessário consultar o desenvolvedor do projeto.
