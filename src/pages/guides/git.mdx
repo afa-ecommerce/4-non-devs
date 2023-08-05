@@ -1,0 +1,142 @@
+import { ExternalLink } from '@/components/external-link'
+import { Wrapper } from '@/components/wrapper'
+
+import Image from 'next/image'
+
+# Instalando e configurando Git
+
+## Git e Github
+
+Para a configuração do Git, você pode utilizar a
+documentação já pronta do Github. Elá é muito simples e fácil de usar, mas eu vou ir passo a passo com você.
+
+---
+
+<ExternalLink href="https://docs.github.com/en/get-started/quickstart/set-up-git">
+  Acesse a documentação do Github
+</ExternalLink>
+
+<Image
+  className="rounded-lg my-4 drop-shadow-lg ring ring-zinc-600"
+  src="https://i.imgur.com/MORmhRi.png"
+  alt="Documentação do Github, Setting up Git"
+  width={1000}
+  height={600}
+/>
+
+Com a **documentação do Github você só precisa seguir esses 3 passos** e pronto, você já consegue utilizar seu _Bash_, _Powershell_ ou _Terminal_ para executar os comandos do Git.
+
+Minha **recomendação para quem utiliza Windows** é usar o terminal que o Git traz, o nome dele é **Git Bash**. Com ele você vai ter mais facilidade de utilizar o Git e ele também traz suporte a alguns comandos do linux, o que é basicamente um **plus**
+
+### Passo a passo
+
+#### Instalando Git
+
+<Wrapper>
+  Você pode encontrar o instalador do **Git**{' '}
+  <ExternalLink href="https://git-scm.com/downloads">aqui</ExternalLink>
+</Wrapper>
+
+Quando você abrir o site do Git, você vai se deparar com essa tela
+
+<Image
+  className="rounded-lg my-4 drop-shadow-lg ring ring-zinc-600"
+  src="https://i.imgur.com/v7Y6Z0x.png"
+  alt="Baixando instalador"
+  width={1000}
+  height={400}
+/>
+
+Para instalar, apenas selecione o seu systema operacional e execute o instalador. Como os demais instaladores, no Git você não vai precisar alterar nada. <span className="ml-1 font-light text-xs">(se eu ainda me lembro bem...)</span>
+
+Ao finalizar é necessário fazer as configurações para conseguir utilizar ele em conjunto com sua conta do Github
+
+#### Configurando Git
+
+Primeiro eu peço que abra um terminal, de preferencia o `Git Bash`
+
+##### Definindo seu `username` no Git
+
+Com o terminal aberto, copie esse commando abaixo e altere o conteúdo entre aspas com o nome de usuário do seu Github
+
+```bash copy
+git config --global user.name "meu nome no github"
+```
+
+Uma forma de achar isso é abrir seu Github e clicar no **menu** no canto superior direito, lá você vai encontrar seu nome e nome de usuario, copie o nome mais transparente.
+
+<Image
+  className="rounded-lg drop-shadow-lg ring ring-zinc-600 w-[60%] mx-auto my-12"
+  src="https://i.imgur.com/eeiyxBC.png"
+  alt="Nome de usuario do github"
+  width={1000}
+  height={400}
+/>
+
+Nesse exemplo, o nome "mais transparente" seria o que está com highlight na cor azul, pois eu selecionei o texto com o meu mouse...
+
+Para testar se o comando que você executou funcionou de forma correta copie e cole esse comando no seu terminal
+
+```bash copy
+git config --global user.name
+```
+
+Se ele mostrar um texto que mostra o seu nome de usuario, então deve estar correto, exemplo:
+
+```bash
+# Configurando o nome de usuario
+$ git config --global user.name "hlyd"
+
+# Verificando se ele está correto
+$ git config --global user.name
+
+# Se esse valor for similar ao que você colocou entre as aspas
+# então você pode ir para o próximo passo
+> hlyd
+```
+
+##### Definindo seu `email` no Git
+
+Ainda com o terminal aberto, copie esse commando abaixo e altere o conteúdo entre aspas com o seu email do seu Github
+
+```bash copy
+git config --global user.email "meu email usado no github"
+```
+
+Uma forma de achar isso é abrir seu Github e clicar no **menu** no canto superior direito e selecionar o icone com uma engrenagem chamado _Settings_ ou _Configurações_
+
+<Image
+  className="rounded-lg drop-shadow-lg ring ring-zinc-600 w-[60%] mx-auto my-12"
+  src="https://docs.github.com/assets/cb-65929/mw-1440/images/help/settings/userbar-account-settings.webp"
+  alt="Nome de usuario do github"
+  width={1000}
+  height={400}
+/>
+
+Na pagina de configurações, você tem que clicar na aba de _emails_, ela vai ter um icone de envelope. Nessa aba vão estar todos os seus e-mails
+
+Se quiser fazer o uso de um email privado, eu indico utilizar a documentação do github.
+
+Voltando para o terminal, você consegue testar se o comando que você executou funcionou de forma correta com o seguinte commando:
+
+```bash copy
+git config --global user.email
+```
+
+Se ele mostrar um texto que mostra o seu email digitado, então deve estar correto, exemplo:
+
+```bash
+# Configurando o email
+$ git config --global user.email "hlyd@example.com"
+
+# Verificando se ele está correto
+$ git config --global user.email
+
+# Se esse valor for similar ao que você colocou entre as aspas
+# então você pode ir para o próximo passo
+> hlyd@example.com
+```
+
+## _Outro_
+
+Com isso as configurações estão feitas, agora vamos tentar clonar e instalar dependencias de um repositório.
