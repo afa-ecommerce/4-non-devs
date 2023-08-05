@@ -1,34 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 4 Non-devs
 
-## Getting Started
+## Intro
 
-First, run the development server:
+Documentation to explain for non developer how to install the basic tools and setup Git with Github so that you can clone and run Javascript projects.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Fairly simple concept, however I'm not working with developers but people that could have absolutely no knowledge of any of those things. For that reason, I'm trying to explain in the most concise way using a familiar language, so that I don't have to keep going on meets and doing this shit step by step with them, _Capiche?_.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Observation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+If you're familiar with those tools or you don't understand _Portuguese_, don't even bother using this.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Outro
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This documentation was built using Nextra and Tailwind.
